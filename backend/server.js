@@ -16,7 +16,10 @@ app.use(express.json()) // help in using express data
 app.use(express.urlencoded({extended:false}))
 app.use(bodyparser.json())
 app.use(cookieParser());
-app.use(cors());
+app.use(cors({
+    origin:['http://localhost:3000','https://pinvent-app.vercel.app'],
+    credentials:true
+}));
 
 
 // point to upload folder
