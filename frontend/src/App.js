@@ -14,6 +14,7 @@ import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { getLoginStatus } from './services/authService';
 import { SET_LOGIN } from './redux/features/auth/authSlice';
+import AddProduct from './pages/addProduct/AddProduct';
 
 // this will make sure that whenever we make a request, we are able to save the credentials
 
@@ -53,6 +54,14 @@ function App() {
           </Sidebar>
         }/>
 
+      <Route path='/add-product' element=
+        {
+          <Sidebar>
+            <Layout>
+              <AddProduct/>
+            </Layout>
+          </Sidebar>
+        }/>
       </Routes>
     </BrowserRouter>
   );
