@@ -162,3 +162,44 @@ export const getUser=async()=>{
         toast.error(message);
     }
 }
+
+// update profile
+export const updateUser=async(formData)=>{
+    try
+    {
+        const response=await axios.patch(`${BACKEND_URL}/api/users/updateuser`,formData);
+
+        return response.data
+    }
+    catch(err)
+    {
+         // error can be in any format
+
+         const message=(
+            err.response && err.response.data && err.response.data.message
+        ) || err.message || err.toString();
+
+        toast.error(message);
+    }
+}
+
+// change password
+export const changePassword=async(formData)=>{
+    try
+    {
+        const response=await axios.patch(`${BACKEND_URL}/api/users/changepassword`,formData);
+
+        return response.data
+    }
+    catch(err)
+    {
+         // error can be in any format
+
+         const message=(
+            err.response && err.response.data && err.response.data.message
+        ) || err.message || err.toString();
+
+        toast.error(message);
+    }
+}
+

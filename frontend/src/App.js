@@ -17,6 +17,9 @@ import { SET_LOGIN } from './redux/features/auth/authSlice';
 import AddProduct from './pages/addProduct/AddProduct';
 import ProductDetail from './components/product/productDetail/ProductDetail';
 import EditProduct from './pages/editProduct/EditProduct';
+import Profile from './pages/profile/Profile';
+import EditProfile from './pages/profile/EditProfile';
+import Contact from './pages/contact/Contact';
 
 // this will make sure that whenever we make a request, we are able to save the credentials
 
@@ -47,6 +50,24 @@ function App() {
         <Route path='/resetpassword/:resetToken' element={<Reset/>}/>
         <Route path='/forgot' element={<Forgot/>}/>
 
+        <Route path='/profile' element=
+        {
+          <Sidebar>
+            <Layout>
+              <Profile/>
+            </Layout>
+          </Sidebar>
+        }/>
+
+      <Route path='/edit-profile' element=
+        {
+          <Sidebar>
+            <Layout>
+              <EditProfile/>
+            </Layout>
+          </Sidebar>
+        }/>
+
         <Route path='/dashboard' element=
         {
           <Sidebar>
@@ -74,7 +95,7 @@ function App() {
           </Sidebar>
         }/>
 
-      <Route path='/edit-product/:id' element=
+      <Route path='/edit-product' element=
         {
           <Sidebar>
             <Layout>
@@ -82,6 +103,16 @@ function App() {
             </Layout>
           </Sidebar>
         }/>
+
+      <Route path='/contact-us' element=
+        {
+          <Sidebar>
+            <Layout>
+              <Contact/>
+            </Layout>
+          </Sidebar>
+        }/>
+
       </Routes>
     </BrowserRouter>
   );
