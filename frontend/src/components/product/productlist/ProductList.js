@@ -82,11 +82,6 @@ const ProductList = ({products,isLoading}) => {
           });
     }
 
-    const seeProduct=(id)=>
-    {
-
-    }
-    
   return (
     <div className='product-list'>
     <hr/>
@@ -137,11 +132,13 @@ const ProductList = ({products,isLoading}) => {
                                         <td className='icons'>
                                             <span>
                                                 <Link to={`/product-detail/${_id}`}>
-                                                    <AiOutlineEye size={25} color={'purple'} onClick={()=>seeProduct(_id)}/>
+                                                    <AiOutlineEye size={25} color={'purple'}/>
                                                 </Link>
                                             </span>
                                             <span>
-                                                <FaEdit size={20} color={'green'}/>
+                                                <Link to={`/edit-product/${_id}`}>
+                                                    <FaEdit size={20} color={'green'} />
+                                                </Link>
                                             </span>
                                             <span>
                                                 <FaTrashAlt size={20} color={'red'} onClick={()=>confirmDelete(_id)}/>

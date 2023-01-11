@@ -141,3 +141,24 @@ export const getLoginStatus=async()=>{
         toast.error(message);
     }
 }
+
+// get use Profile
+export const getUser=async()=>{
+
+    try
+    {
+        const response= await axios.get(`${BACKEND_URL}/api/users/getuser`);
+
+        return response.data
+    }
+    catch(err)
+    {
+        // error can be in any format
+
+        const message=(
+            err.response && err.response.data && err.response.data.message
+        ) || err.message || err.toString();
+
+        toast.error(message);
+    }
+}
