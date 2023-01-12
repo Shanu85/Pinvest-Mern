@@ -25,7 +25,7 @@ const ProductList = ({products,isLoading}) => {
     const[pageCount,setPageCount]=useState(0);
     const[itemOffset,setItemOffset]=useState(0);
 
-    const itemPerPage=2
+    const itemPerPage=5
 
     useEffect(()=>{
         const endOffset=itemOffset+itemPerPage;
