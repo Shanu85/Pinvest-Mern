@@ -95,7 +95,7 @@ function App() {
           </Sidebar>
         }/>
 
-      <Route path='/edit-product' element=
+      <Route path='/edit-product/:id' element=
         {
           <Sidebar>
             <Layout>
