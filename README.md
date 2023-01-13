@@ -1,2 +1,2 @@
 # Pinvest-Mern
-Mern APP
+A full stack inventory and management app using MERN. 
