@@ -27,6 +27,8 @@ Users can reset their password by entering a valid email if they forget it. The 
 
 
 # Product
+![Screenshot from 2023-01-14 12-19-11](https://user-images.githubusercontent.com/63155782/212459841-bf0a5cbc-7c04-406d-8160-90958dc78981.png)
+
 
 ## Add Product
 After login, you can add the inventory.You have to fill a form. Add name,category,quantity,price,bio and image for the product.
