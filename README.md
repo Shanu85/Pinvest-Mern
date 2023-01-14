@@ -46,6 +46,8 @@ User can view the product by clicking on view button.
 
 ![Screenshot from 2023-01-14 09-50-48](https://user-images.githubusercontent.com/63155782/212450411-d9bae43c-1c50-43ec-99d7-a508de428c00.png)
 
+# Contact 
+Users can also contact the developers of the app. They can report any issue by typing the subject and message in the contact tab.
 
-
+![Screenshot from 2023-01-14 11-16-42](https://user-images.githubusercontent.com/63155782/212457912-c833f003-0ab2-43f5-b4d8-f29bf4f588d5.png)
 
